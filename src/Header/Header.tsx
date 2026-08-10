@@ -25,7 +25,7 @@ export const Header = () => {
     // Затримуємо закриття меню на 150мс, щоб нова сторінка встигла відрендеритись
     setTimeout(() => {
       setIsVisibleMenu(false);
-    }, 150);
+    }, 300);
   };
 
   useEffect(() => {
