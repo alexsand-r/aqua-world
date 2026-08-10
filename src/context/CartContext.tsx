@@ -6,9 +6,9 @@ import {
   useContext,
   ReactNode,
   useEffect,
-} from 'react';
+} from "react";
 
-const CART_STORAGE_KEY = 'cart_products';
+const CART_STORAGE_KEY = "cart_products";
 
 // 1. Елемент кошика містить ТІЛЬКИ id та кількість
 export interface CartItemData {
@@ -46,16 +46,16 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   // Перевірка чи є в кошику
   const isInCart = (productId: string) => {
-    return cartItems.some(item => item.id === productId);
+    return cartItems.some((item) => item.id === productId);
   };
 
   // Перемикач для кнопки "Add to cart" / "Selected"
   const toggleCart = (productId: string) => {
-    setCartItems(prevItems => {
-      const isExist = prevItems.some(item => item.id === productId);
+    setCartItems((prevItems) => {
+      const isExist = prevItems.some((item) => item.id === productId);
 
       if (isExist) {
-        return prevItems.filter(item => item.id !== productId);
+        return prevItems.filter((item) => item.id !== productId);
       } else {
         // За замовчуванням додаємо 1 штуку
         return [...prevItems, { id: productId, quantity: 1 }];
@@ -65,8 +65,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   // Збільшити кількість (+)
   const increaseQuantity = (productId: string) => {
-    setCartItems(prevItems =>
-      prevItems.map(item =>
+    setCartItems((prevItems) =>
+      prevItems.map((item) =>
         item.id === productId ? { ...item, quantity: item.quantity + 1 } : item,
       ),
     );
@@ -74,8 +74,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   // Зменшити кількість (-)
   const decreaseQuantity = (productId: string) => {
-    setCartItems(prevItems =>
-      prevItems.map(item =>
+    setCartItems((prevItems) =>
+      prevItems.map((item) =>
         item.id === productId && item.quantity > 1
           ? { ...item, quantity: item.quantity - 1 }
           : item,
@@ -85,7 +85,9 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   // Видалення з хрестика
   const removeFromCart = (productId: string) => {
-    setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+    setCartItems((prevItems) =>
+      prevItems.filter((item) => item.id !== productId),
+    );
   };
 
   // Загальна кількість товарів для беджика в хедері (сума всіх quantity)
@@ -112,7 +114,7 @@ export const useCart = () => {
   const context = useContext(CartContext);
 
   if (!context) {
-    throw new Error('useCart must be used within a CartProvider');
+    throw new Error("useCart must be used within a CartProvider");
   }
 
   return context;
