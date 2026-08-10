@@ -6,10 +6,10 @@ import {
   useContext,
   ReactNode,
   useEffect,
-} from 'react';
+} from "react";
 
 // Ключ для збереження обраного в пам'яті браузера
-const FAVOURITES_STORAGE_KEY = 'favourites_products';
+const FAVOURITES_STORAGE_KEY = "favourites_products";
 
 // 1. Описуємо тип даних контексту
 interface FavouritesContextType {
@@ -41,12 +41,12 @@ export const FavouritesProvider = ({ children }: { children: ReactNode }) => {
 
   // Логіка додавання / видалення (productId: string)
   const toggleFavourite = (productId: string) => {
-    setFavourites(prevFavourites => {
+    setFavourites((prevFavourites) => {
       const isExist = prevFavourites.includes(productId);
 
       if (isExist) {
         // Якщо вже є — видаляємо
-        return prevFavourites.filter(id => id !== productId);
+        return prevFavourites.filter((id) => id !== productId);
       } else {
         // Якщо немає — додаємо
         return [...prevFavourites, productId];
@@ -78,7 +78,7 @@ export const useFavourites = () => {
   const context = useContext(FavouritesContext);
 
   if (!context) {
-    throw new Error('useFavourites must be used within a FavouritesProvider');
+    throw new Error("useFavourites must be used within a FavouritesProvider");
   }
 
   return context;
