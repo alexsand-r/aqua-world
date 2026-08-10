@@ -14,7 +14,6 @@ import close from "/icons/close.svg";
 
 export const Header = () => {
   const [isVisibleMenu, setIsVisibleMenu] = useState(false);
-  // 2. Витягуємо favouritesCount з контексту
   const { favouritesCount } = useFavourites();
   const { cartCount } = useCart();
 
@@ -23,7 +22,10 @@ export const Header = () => {
   };
 
   const closeBurgerMenu = () => {
-    setIsVisibleMenu(false);
+    // Затримуємо закриття меню на 150мс, щоб нова сторінка встигла відрендеритись
+    setTimeout(() => {
+      setIsVisibleMenu(false);
+    }, 150);
   };
 
   useEffect(() => {
