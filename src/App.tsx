@@ -1,122 +1,215 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState, useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
+import { Home } from "./Pages/Home/Home";
+import "./styles/App.scss";
+import type { Product } from "./types/Product";
+import { getProducts } from "./services/httpClient";
+import { FavouritesProvider } from "./context/FavouritesContext";
+import { CartProvider } from "./context/CartContext";
+import { Loader } from "./components/Loader";
+import { ErrorItem } from "./components/ErrorItem/ErrorItem";
+import { CatalogPage } from "./Pages/CatalogPage/CatalogPage";
+import { ProductDetailsPage } from "./Pages/ProductDetailsPage/ProductDetailsPage";
+import { Favourites } from "./Pages/Favourites/Favourites";
+import { Cart } from "./Pages/Cart/Cart";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { NotFoundPage } from "./Pages/NotFoundPage/NotFoundPage";
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [isError, setIsError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    getProducts()
+      .then((data) => {
+        setProducts(data);
+      })
+      .catch(() => {
+        setIsError(true);
+      })
+      .finally(() => {
+        if (isMounted) {
+          setTimeout(() => {
+            setIsLoading(false);
+          }, 300);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const getNewBrand = (items: Product[]) => {
+    return [...items]
+      .sort((a, b) => {
+        if (b.year !== a.year) {
+          return b.year - a.year;
+        }
+
+        return b.price - a.price;
+      })
+      .slice(0, 12);
+  };
+
+  const getHotProducts = (items: Product[]) => {
+    return items
+      .filter((product) => product.fullPrice > product.price)
+      .sort((a, b) => b.fullPrice - b.price - (a.fullPrice - a.price))
+      .slice(0, 12);
+  };
+
+  const getSuggestedProducts = (
+    items: Product[],
+    currentProductId?: string,
+  ) => {
+    return [...items]
+      .filter((product) => product.itemId !== currentProductId)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 12);
+  };
+
+  const newBrandProducts = getNewBrand(products);
+  const hotProducts = getHotProducts(products);
+  const likeProducts = getSuggestedProducts(products);
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <CartProvider>
+      <FavouritesProvider>
+        <div className="App">
+          <div className="wrapper">
+            <Header />
+            <div className="page"></div>
+            <ScrollToTop />
+            <div className="page">
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <Home
+                      newBrandProducts={newBrandProducts}
+                      hotProducts={hotProducts}
+                      products={products}
+                    />
+                  }
+                />
+                <Route path="home" element={<Navigate to="/" replace />} />
+                <Route
+                  path="/aquariums"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <CatalogPage
+                        products={products}
+                        category="aquariums"
+                        title="Aquariums"
+                      />
+                    )
+                  }
+                />
+                <Route
+                  path="/fish"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <CatalogPage
+                        products={products}
+                        category="fish"
+                        title="Fish"
+                      />
+                    )
+                  }
+                />
+                <Route
+                  path="/equipment"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <CatalogPage
+                        products={products}
+                        category="equipment"
+                        title="Equipment"
+                      />
+                    )
+                  }
+                />
+                <Route
+                  path="/favourites"
+                  element={
+                    <Favourites category="favourites" products={products} />
+                  }
+                />
+                <Route
+                  path="/cart"
+                  element={<Cart category="cart" products={products} />}
+                />
+                <Route
+                  path="/aquariums/:productId"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <ProductDetailsPage
+                        likeProducts={likeProducts}
+                        category="aquariums"
+                      />
+                    )
+                  }
+                />
+                <Route
+                  path="/fish/:productId"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <ProductDetailsPage
+                        likeProducts={likeProducts}
+                        category="fish"
+                      />
+                    )
+                  }
+                />
+                <Route
+                  path="/equipment/:productId"
+                  element={
+                    isLoading ? (
+                      <Loader />
+                    ) : isError ? (
+                      <ErrorItem message="Oops. Something went wrong.." />
+                    ) : (
+                      <ProductDetailsPage
+                        likeProducts={likeProducts}
+                        category="equipment"
+                      />
+                    )
+                  }
+                />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </div>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+            <Footer />
+          </div>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
-}
-
-export default App
+      </FavouritesProvider>
+    </CartProvider>
+  );
+};

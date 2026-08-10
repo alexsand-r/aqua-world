@@ -1,0 +1,201 @@
+[
+{
+    "id": "aquarium-clearsea-30",
+    "category": "aquariums",
+    "namespaceId": "aquarium-clearsea",
+    "name": "ClearSea Aquarium",
+    "capacityAvailable": ["30L", "60L", "100L"],
+    "capacity": "30L",
+    "colorsAvailable": ["black"],
+    "color": "black",
+    "priceRegular": 2400,
+    "priceDiscount": 1999,
+    "images": ["img/aquariums/aquarium-clearsea-30.png", 
+    "img/aquariums/aquarium-clearsea-30-01.png"],
+    "description": [{ "title": "Clear Sea Panorama View", "text": ["High-transparency clear glass aquarium designed for modern home or office setups.", "Comes with polished edges, a protective silicone base mat, and durable 5mm glass construction."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "30 L",
+    "adultSize": "35 x 25 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "aquarium-clearsea-60-black",
+    "category": "aquariums",
+    "namespaceId": "aquarium-clearsea",
+    "name": "ClearSea Aquarium",
+    "capacityAvailable": ["30L", "60L", "100L"],
+    "capacity": "60L",
+    "colorsAvailable": ["black"],
+    "color": "black",
+    "priceRegular": 3500,
+    "priceDiscount": 2999,
+    "images": ["img/aquariums/aquarium-clearsea-60-black.png", 
+    "img/aquariums/aquarium-clearsea-60-black-01.png"],
+    "description": [{ "title": "Clear Sea Panorama View", "text": ["High-transparency clear glass aquarium designed for modern home or office setups.", "Comes with polished edges, a protective silicone base mat, and durable 6mm glass construction."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "60 L",
+    "adultSize": "60 x 30 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "aquarium-clearsea-100",
+    "category": "aquariums",
+    "namespaceId": "aquarium-clearsea",
+    "name": "ClearSea Aquarium",
+    "capacityAvailable": ["30L", "60L", "100L"],
+    "capacity": "100L",
+    "colorsAvailable": ["black"],
+    "color": "black",
+    "priceRegular": 5200,
+    "priceDiscount": 4499,
+    "images": ["img/aquariums/aquarium-clearsea-100.png", 
+    "img/aquariums/aquarium-clearsea-100-01.png"],
+    "description": [{ "title": "Clear Sea Panorama View", "text": ["High-transparency clear glass aquarium designed for modern home or office setups.", "Comes with polished edges, a protective silicone base mat, and durable 10mm glass construction."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "100 L",
+    "adultSize": "80 x 35 x 40 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+{
+    "id": "aquarium-nano-cube-30-white",
+    "category": "aquariums",
+    "namespaceId": "aquarium-nano-cube",
+    "name": "NanoCube Aquarium",
+    "capacityAvailable": ["30L", "50L"],
+    "capacity": "30L",
+    "colorsAvailable": ["white", "black"],
+    "color": "white",
+    "priceRegular": 2100,
+    "priceDiscount": 1850,
+    "images": [
+      "img/aquariums/nano-cube-30-white.png",
+      "img/aquariums/nano-cube-30-01-white.png"
+    ],
+    "description": [
+      {
+        "title": "Compact Cube Design",
+        "text": [
+          "Ideal nano aquarium for keeping small fish, freshwater shrimp, or compact planted aquascapes.",
+          "Features a minimal footprint with clear panoramic front corners."
+        ]
+      }
+    ],
+    "origin": "Poland",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "30 L",
+    "adultSize": "30 x 30 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "aquarium-nano-cube-50-white",
+    "category": "aquariums",
+    "namespaceId": "aquarium-nano-cube",
+    "name": "NanoCube Aquarium",
+    "capacityAvailable": ["30L", "50L"],
+    "capacity": "50L",
+    "colorsAvailable": ["white", "black"],
+    "color": "white",
+    "priceRegular": 3100,
+    "priceDiscount": 2300,
+     "images": ["img/aquariums/aquarium-clearsea-100.png", 
+    "img/aquariums/aquarium-clearsea-100-01.png"],
+    "description": [
+      {
+        "title": "Compact Cube Design",
+        "text": [
+          "Ideal nano aquarium for keeping small fish, freshwater shrimp, or compact planted aquascapes.",
+          "Features a minimal footprint with clear panoramic front corners."
+        ]
+      }
+    ],
+    "origin": "Poland",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "50 L",
+    "adultSize": "35 x 35 x 40 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+{
+    "id": "aquarium-panorama-100",
+    "category": "aquariums",
+    "namespaceId": "aquarium-panorama",
+    "name": "Panorama Aquarium",
+    "capacityAvailable": ["60L", "100L"],
+    "capacity": "100L",
+    "colorsAvailable": ["black", "white"],
+    "color": "black",
+    "priceRegular": 6200,
+    "priceDiscount": 5499,
+    "images": [
+      "img/aquariums/panorama-100-black.png",
+      "img/aquariums/panorama-100-01-black.png"
+    ],
+    "description": [
+      {
+        "title": "Panoramic Curved View",
+        "text": [
+          "Spacious 100-liter aquarium featuring curved front glass for an uninterrupted underwater perspective.",
+          "Constructed with thick 8mm safety glass, perfect for vibrant community aquariums."
+        ]
+      }
+    ],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "100 L",
+    "adultSize": "100 x 35 x 45 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "aquarium-panorama-60",
+    "category": "aquariums",
+    "namespaceId": "aquarium-panorama",
+    "name": "Panorama Aquarium",
+    "capacityAvailable": ["60L", "100L"],
+    "capacity": "60L",
+    "colorsAvailable": ["black", "white"],
+    "color": "black",
+    "priceRegular": 5100,
+    "priceDiscount": 4800,
+    "images": [
+      "img/aquariums/panorama-100-black.png",
+      "img/aquariums/panorama-100-01-black.png"
+    ],
+    "description": [
+      {
+        "title": "Panoramic Curved View",
+        "text": [
+          "Spacious 60-liter aquarium featuring curved front glass for an uninterrupted underwater perspective.",
+          "Constructed with thick 6mm safety glass, perfect for vibrant community aquariums."
+        ]
+      }
+    ],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "60 L",
+    "adultSize": "60 x 30 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  }
+]

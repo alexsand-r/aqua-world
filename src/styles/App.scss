@@ -1,0 +1,69 @@
+// .. App.scss
+
+// App.scss
+
+@import "./reset";
+@import "./variable";
+@import "../utils/mixins";
+@import "./typography";
+
+/* Підключаємо шрифт Outfit з Google Fonts (Regular 400, SemiBold 600, Bold 700) */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+// Import Swiper styles
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+/* Імпорт Bulma */
+@import "bulma/css/bulma.css";
+
+/* Застосовуємо Outfit до всього сайту та налаштовуємо темний океанічний колір тексту */
+:root {
+  --bulma-font-family: "Outfit", sans-serif;
+  --bulma-body-background-color: $color-white;
+  --bulma-body-color: #0f172a; /* Глибокий темно-синій замість звичайного сірого */
+  --bulma-scheme-h: 0;
+  --bulma-scheme-s: 0%;
+  --bulma-scheme-l: 100%;
+}
+
+body,
+html {
+  font-family: "Outfit", sans-serif !important;
+  background-color: $color-white !important;
+  color: #0f172a !important; /* Океанічний темний колір для всього тексту */
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1166px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+// Утилітарні класи відступів
+.mb-32-40 {
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}

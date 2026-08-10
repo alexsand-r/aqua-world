@@ -1,0 +1,170 @@
+[
+{
+    "id": "equipment-filter-eheim-150",
+    "category": "equipment",
+    "namespaceId": "equipment-filter-eheim",
+    "name": "Eheim External Filter",
+    "capacityAvailable": ["150L", "250L"],
+    "capacity": "150L",
+    "colorsAvailable": ["green"],
+    "color": "green",
+    "priceRegular": 3200,
+    "priceDiscount": 2799,
+    "images": [
+      "img/equipment/eheim-250.png",
+      "img/equipment/eheim-250-1.png"
+    ],
+    "description": [{ "title": "Reliable German Filtration", "text": ["High-performance external canister filter designed for crystal clear aquarium water.", "Features quiet operation, energy efficiency, and easy priming mechanism."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "150 L",
+    "adultSize": "18 x 18 x 30 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "equipment-filter-eheim-250",
+    "category": "equipment",
+    "namespaceId": "equipment-filter-eheim",
+    "name": "Eheim External Filter",
+    "capacityAvailable": ["150L", "250L"],
+    "capacity": "250L",
+    "colorsAvailable": ["green"],
+    "color": "green",
+    "priceRegular": 4500,
+    "priceDiscount": 3999,
+    "images": [
+      "img/equipment/eheim-250.png",
+      "img/equipment/eheim-250-1.png"
+    ],
+    "description": [{ "title": "Reliable German Filtration", "text": ["High-performance external canister filter designed for crystal clear aquarium water.", "Features quiet operation, energy efficiency, and easy priming mechanism."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "250 L",
+    "adultSize": "21 x 21 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "equipment-led-light-slim-60 cm",
+    "category": "equipment",
+    "namespaceId": "equipment-led-light-slim",
+    "name": "AquaLED Slim Light",
+    "capacityAvailable": ["60 cm"],
+    "capacity": "60 cm",
+    "colorsAvailable": ["silver", "black"],
+    "color": "silver",
+    "priceRegular": 1500,
+    "priceDiscount": 1299,
+    "images": [
+      "img/equipment/aqualed-slim.png",
+      "img/equipment/aqualed-slim-1.png"
+    ],
+    "description": [
+      {
+        "title": "Ultra-Slim Aquarium Lighting",
+        "text": [
+          "Sleek aluminum body LED fixture designed for freshwater and planted tanks.",
+          "Emits a 6500K natural daylight spectrum that promotes healthy plant growth."
+        ]
+      }
+    ],
+    "origin": "Poland",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "50 L",
+    "adultSize": "60 x 6 x 1 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "equipment-heater-aquael-100W",
+    "category": "equipment",
+    "namespaceId": "equipment-heater-aquael",
+    "name": "Aquael Platinum Heater 100W",
+    "capacityAvailable": ["100W"],
+    "capacity": "100W",
+    "colorsAvailable": ["black"],
+    "color": "black",
+    "priceRegular": 780,
+    "priceDiscount": 690,
+    "images": [
+      "img/equipment/aquael-heater-100.png",
+      "img/equipment/aquael-heater-100-01.png"
+    ],
+    "description": [
+      {
+        "title": "Precision Electronic Thermostat",
+        "text": [
+          "Fully electronic glass heater equipped with a high-precision thermostat (+/- 0.2°C).",
+          "Features an intuitive LED display showing current and set water temperatures."
+        ]
+      }
+    ],
+    "origin": "Poland",
+    "waterTemp": "20 - 33 °C",
+    "phRange": "N/A",
+    "minTankVolume": "60 L",
+    "adultSize": "24.5 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "filter-eheim-150",
+    "category": "equipment",
+    "namespaceId": "filter-eheim",
+    "name": "Eheim External Filter",
+    "capacityAvailable": ["150L", "250L"],
+    "capacity": "150L",
+    "colorsAvailable": ["green"],
+    "color": "green",
+    "priceRegular": 150,
+    "priceDiscount": 133,
+    "images": [
+      "img/equipment/aquael-pat-mini.png",
+      "img/equipment/aquael-pat-mini-1.png"
+    ],
+    "description": [{ "title": "Reliable German Filtration", "text": ["High-performance external canister filter designed for crystal clear aquarium water.", "Features quiet operation, energy efficiency, and easy priming mechanism."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "150 L",
+    "adultSize": "18 x 18 x 30 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  },
+  {
+    "id": "filter-eheim-250",
+    "category": "equipment",
+    "namespaceId": "filter-eheim",
+    "name": "Eheim Filter",
+    "capacityAvailable": ["150L", "250L"],
+    "capacity": "250L",
+    "colorsAvailable": ["green"],
+    "color": "green",
+    "priceRegular": 45,
+    "priceDiscount": 39,
+    "images": [
+      "img/equipment/aquael-pat-mini-1.png",
+      "img/equipment/aquael-pat-mini.png"
+      
+    ],
+    "description": [{ "title": "Reliable German Filtration", "text": ["High-performance external canister filter designed for crystal clear aquarium water.", "Features quiet operation, energy efficiency, and easy priming mechanism."] }],
+    "origin": "Germany",
+    "waterTemp": "N/A",
+    "phRange": "N/A",
+    "minTankVolume": "250 L",
+    "adultSize": "21 x 21 x 35 cm",
+    "temperament": "N/A",
+    "careLevel": "Easy",
+    "diet": "N/A"
+  }
+
+]

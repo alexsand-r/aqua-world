@@ -1,0 +1,299 @@
+[
+{
+    "id": "fish-blue-discus-12 cm",
+    "category": "fish",
+    "namespaceId": "fish-blue-discus",
+    "name": "Blue Silk Royal",
+    "capacityAvailable": ["8 cm", "12 cm"],
+    "capacity": "12 cm",
+    "colorsAvailable": ["blue", "red"],
+    "color": "blue",
+    "priceRegular": 850,
+    "priceDiscount": 750,
+    "images": [
+      "img/fish/blue-discus.png",
+      "img/fish/blue-discus-01.png"
+    ],
+    "description": [
+      {
+        "title": "Majestic Cichlid",
+        "text": [
+          "The Blue Silk Discus is known as the king of freshwater aquariums due to its striking iridescent appearance and graceful swimming behavior.",
+          "Thrives best in peaceful community tanks with warm, clean, and well-filtered water."
+        ]
+      }
+    ],
+    "origin": "Amazon River Basin",
+    "waterTemp": "28 - 31 °C",
+    "phRange": "6.0 - 7.0",
+    "minTankVolume": "200 L",
+    "adultSize": "12 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Advanced",
+    "diet": "Carnivore / Omnivore"
+  },
+  {
+    "id": "fish-blue-discus-8 cm",
+    "category": "fish",
+    "namespaceId": "fish-blue-discus",
+    "name": "Blue Silk Discus",
+    "capacityAvailable": ["8 cm", "12 cm"],
+    "capacity": "8 cm",
+    "colorsAvailable": ["blue", "red"],
+    "color": "blue",
+    "priceRegular": 750,
+    "priceDiscount": 600,
+    "images": [
+      "img/fish/blue-discus-8.png",
+      "img/fish/blue-discus-8-01.png"
+    ],
+    "description": [
+      {
+        "title": "Majestic Cichlid",
+        "text": [
+          "The Blue Silk Discus is known as the king of freshwater aquariums due to its striking iridescent appearance and graceful swimming behavior.",
+          "Thrives best in peaceful community tanks with warm, clean, and well-filtered water."
+        ]
+      }
+    ],
+    "origin": "Amazon River Basin",
+    "waterTemp": "28 - 31 °C",
+    "phRange": "6.0 - 7.0",
+    "minTankVolume": "150 L",
+    "adultSize": "6 - 8 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Advanced",
+    "diet": "Carnivore / Omnivore"
+  },
+{
+  "id": "fish-neon-tetra-3 cm",
+  "category": "fish",
+  "namespaceId": "fish-neon-tetra",
+  "name": "Blue Neon Tetra",
+  "capacityAvailable": ["2 cm", "3 cm"],
+  "capacity": "3 cm",
+  "colorsAvailable": ["blue", "red"],
+  "color": "blue",
+  "priceRegular": 45,
+  "priceDiscount": 35,
+  "images": [
+    "img/fish/neon-tetra.png",
+    "img/fish/neon-tetra-1.png"
+  ],
+  "description": [
+    {
+      "title": "Classic Schooling Fish",
+      "text": [
+        "Blue Neon Tetras are famous for their brilliant blue and red stripes that illuminate the aquarium.",
+        "Best kept in schools of 6 or more individuals to create an impressive visual effect."
+      ]
+    }
+  ],
+  "origin": "South America",
+  "waterTemp": "20 - 26 °C",
+  "phRange": "6.0 - 7.0",
+  "minTankVolume": "30 L",
+  "adultSize": "3.5 cm",
+  "temperament": "Peaceful",
+  "careLevel": "Easy",
+  "diet": "Omnivore"
+},
+  {
+    "id": "fish-neon-tetra-2 cm",
+    "category": "fish",
+    "namespaceId": "fish-neon-tetra",
+    "name": "Fish neon",
+    "capacityAvailable": ["2 cm", "3 cm"],
+    "capacity": "2 cm",
+    "colorsAvailable": ["blue", "red"],
+    "color": "blue",
+    "priceRegular": 17,
+    "priceDiscount": 15,
+    "images": [
+      "img/fish/neon-tetra.png",
+      "img/fish/neon-tetra-1.png"
+    ],
+    "description": [
+      {
+        "title": "Classic Schooling Fish",
+        "text": [
+          "Blue Neon Tetras are famous for their brilliant blue and red stripes that illuminate the aquarium.",
+          "Best kept in schools of 6 or more individuals to create an impressive visual effect."
+        ]
+      }
+    ],
+    "origin": "South America",
+    "waterTemp": "20 - 26 °C",
+    "phRange": "6.0 - 7.0",
+    "minTankVolume": "10 L",
+    "adultSize": "1.5- 2 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Easy",
+    "diet": "Omnivore"
+  },
+{
+    "id": "fish-corydoras-catfish-6 cm",
+    "category": "fish",
+    "namespaceId": "fish-corydoras-catfish",
+    "name": "Corydoras Catfish",
+    "capacityAvailable": ["4 cm", "6 cm"],
+    "capacity": "6 cm",
+    "colorsAvailable": ["brown"],
+    "color": "brown",
+    "priceRegular": 280,
+    "priceDiscount": 220,
+    "images": [
+      "img/fish/catfish-2.png",
+      "img/fish/catfish.png"
+    ],
+    "description": [
+      {
+        "title": "Bottom Dwellers & Tank Cleaners",
+        "text": [
+          "Peaceful bottom-dwelling fish that constantly search the substrate for food scraps.",
+          "Best kept in groups of 3 or more on fine sand substrate to protect their delicate barbels."
+        ]
+      }
+    ],
+    "origin": "South America",
+    "waterTemp": "22 - 26 °C",
+    "phRange": "6.0 - 7.5",
+    "minTankVolume": "30 L",
+    "adultSize": "6 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Easy",
+    "diet": "Omnivore"
+  },
+  {
+    "id": "fish-corydoras-catfish-4 cm",
+    "category": "fish",
+    "namespaceId": "fish-corydoras-catfish",
+    "name": "Corydoras Catfish",
+    "capacityAvailable": ["4 cm", "6 cm"],
+    "capacity": "4 cm",
+    "colorsAvailable": ["brown"],
+    "color": "brown",
+    "priceRegular": 130,
+    "priceDiscount": 102,
+    "images": [
+      "img/fish/catfish.png",
+      "img/fish/catfish-2.png"
+    ],
+    "description": [
+      {
+        "title": "Bottom Dwellers & Tank Cleaners",
+        "text": [
+          "Peaceful bottom-dwelling fish that constantly search the substrate for food scraps.",
+          "Best kept in groups of 3 or more on fine sand substrate to protect their delicate barbels."
+        ]
+      }
+    ],
+    "origin": "South America",
+    "waterTemp": "22 - 26 °C",
+    "phRange": "6.0 - 7.5",
+    "minTankVolume": "20 L",
+    "adultSize": "4 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Easy",
+    "diet": "Omnivore"
+  },
+{
+    "id": "fish-angelfish-gold-8 cm",
+    "category": "fish",
+    "namespaceId": "fish-angelfish-gold",
+    "name": "Golden Angelfish",
+    "capacityAvailable": ["5 cm", "8 cm"],
+    "capacity": "8 cm",
+    "colorsAvailable": ["yellow", "silver"],
+    "color": "yellow",
+    "priceRegular": 180,
+    "priceDiscount": 149,
+    "images": [
+      "img/fish/goldfish.png",
+      "img/fish/goldfish-2.png"
+    ],
+    "description": [
+      {
+        "title": "Elegant Centerpiece",
+        "text": [
+          "Golden Angelfish bring elegance to aquariums with their distinct triangular body shape and vibrant golden hue.",
+          "They prefer tall aquariums with plenty of vertical swimming space and live plants."
+        ]
+      }
+    ],
+    "origin": "Amazon Basin",
+    "waterTemp": "24 - 28 °C",
+    "phRange": "6.0 - 7.5",
+    "minTankVolume": "100 L",
+    "adultSize": "8 cm",
+    "temperament": "Semi-aggressive",
+    "careLevel": "Intermediate",
+    "diet": "Omnivore"
+  },
+  {
+    "id": "fish-angelfish-gold-5 cm",
+    "category": "fish",
+    "namespaceId": "fish-angelfish-gold",
+    "name": "Golden Angelfish",
+    "capacityAvailable": ["5 cm", "8 cm"],
+    "capacity": "5 cm",
+    "colorsAvailable": ["yellow", "silver"],
+    "color": "yellow",
+    "priceRegular": 118,
+    "priceDiscount": 106,
+    "images": [
+      "img/fish/goldfish.png",
+      "img/fish/goldfish-2.png"
+    ],
+    "description": [
+      {
+        "title": "Elegant Centerpiece",
+        "text": [
+          "Golden Angelfish bring elegance to aquariums with their distinct triangular body shape and vibrant golden hue.",
+          "They prefer tall aquariums with plenty of vertical swimming space and live plants."
+        ]
+      }
+    ],
+    "origin": "Amazon Basin",
+    "waterTemp": "24 - 28 °C",
+    "phRange": "6.0 - 7.5",
+    "minTankVolume": "50 L",
+    "adultSize": "5 cm",
+    "temperament": "Semi-aggressive",
+    "careLevel": "Intermediate",
+    "diet": "Omnivore"
+  },
+  {
+    "id": "fish-german-ram-multicolor",
+    "category": "fish",
+    "namespaceId": "fish-german-ram",
+    "name": "German Blue Ram",
+    "capacityAvailable": ["5 cm"],
+    "capacity": "5 cm",
+    "colorsAvailable": ["multicolor", "blue"],
+    "color": "multicolor",
+    "priceRegular": 320,
+    "priceDiscount": 260,
+    "images": [
+      "img/fish/german-ram.png",
+      "img/fish/german-ram-1.png"
+    ],
+    "description": [
+      {
+        "title": "Colorful Dwarf Cichlid",
+        "text": [
+          "German Blue Rams are peaceful dwarf cichlids prized for their multicolored shimmering body.",
+          "They thrive in well-established aquariums with soft, slightly acidic water."
+        ]
+      }
+    ],
+    "origin": "Venezuela / Colombia",
+    "waterTemp": "26 - 30 °C",
+    "phRange": "5.5 - 7.0",
+    "minTankVolume": "50 L",
+    "adultSize": "5 - 7 cm",
+    "temperament": "Peaceful",
+    "careLevel": "Intermediate",
+    "diet": "Omnivore"
+  }
+]
