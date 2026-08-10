@@ -1,11 +1,11 @@
 // .. MobileMenu.tsx
-import styles from './MobileMenu.module.scss';
-import { NavLink } from 'react-router-dom';
-import { useFavourites } from '../context/FavouritesContext';
-import { useCart } from '../context/CartContext';
+import styles from "./MobileMenu.module.scss";
+import { NavLink } from "react-router-dom";
+import { useFavourites } from "../context/FavouritesContext";
+import { useCart } from "../context/CartContext";
 
-import favouriteIcon from '/icons/icon-favourites.svg';
-import shoppingBagIcon from '/icons/icon-shopping-bag.svg';
+import favouriteIcon from "/icons/icon-favourites.svg";
+import shoppingBagIcon from "/icons/icon-shopping-bag.svg";
 
 interface MobileMenuProps {
   onClose: () => void;
@@ -36,9 +36,9 @@ export const MobileMenu = ({ onClose }: MobileMenuProps) => {
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.linkActive}` : styles.link
               }
-              to="/phones"
+              to="/aquariums"
             >
-              Phones
+              Aquariums
             </NavLink>
           </li>
           <li className={styles.navItem}>
@@ -47,9 +47,9 @@ export const MobileMenu = ({ onClose }: MobileMenuProps) => {
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.linkActive}` : styles.link
               }
-              to="/tablets"
+              to="/fish"
             >
-              tablets
+              fish
             </NavLink>
           </li>
           <li className={styles.navItem}>
@@ -58,9 +58,9 @@ export const MobileMenu = ({ onClose }: MobileMenuProps) => {
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.linkActive}` : styles.link
               }
-              to="/accessories"
+              to="/equipment"
             >
-              accessories
+              equipment
             </NavLink>
           </li>
         </ul>
