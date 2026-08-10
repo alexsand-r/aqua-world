@@ -1,12 +1,7 @@
 // .. FavouritesContext.tsx
 /* eslint-disable */
-import {
-  createContext,
-  useState,
-  useContext,
-  ReactNode,
-  useEffect,
-} from "react";
+import type { ReactNode } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 
 // Ключ для збереження обраного в пам'яті браузера
 const FAVOURITES_STORAGE_KEY = "favourites_products";
