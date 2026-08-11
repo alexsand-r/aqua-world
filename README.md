@@ -6,6 +6,10 @@
   <img src="./public/banner-01.png" alt="Aqua World" width="600"/>
 </p>
 
+## 🌐 Live Demo
+Ви можете переглянути проєкт у дії за посиланням:
+[https://aqua-world-two.vercel.app](https://aqua-world-two.vercel.app)
+
 ## 🛠 Технології
 
 Проєкт побудований на сучасному стеку технологій:
